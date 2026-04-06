@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question Game</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+
+  <h2>🎴 Question Generator</h2>
+  <p id="question">Click the button to get a question</p>
+
+  <button onclick="randomQuestion()">Draw Question</button>
+
+  <script>
+    const questions = [
+      "What’s something that made you smile today?",
+      "What kind of vibe do you think you give off?",
+      "What’s your comfort song right now?",
+      "Coffee or tea, and why?",
+      "Are you more of a morning or night person?",
+      "What’s your favorite way to spend a chill day?",
+      "What’s a random thing you’re currently into?",
+      "Do you prefer calls or chats?",
+      "What’s your favorite kind of weather?",
+      "What’s something simple that makes you happy?",
+
+      "What’s something people often misunderstand about you?",
+      "What kind of people do you feel most comfortable with?",
+      "What’s a memory you wish you could relive?",
+      "What motivates you these days?",
+      "When do you feel most like yourself?",
+      "What’s something you’ve been thinking about a lot lately?",
+      "What kind of energy do you like from people?",
+      "What’s something you’re proud of but don’t usually say?",
+      "What helps you calm down when you’re stressed?",
+      "What’s one thing you want to improve about yourself?",
+
+      "What are you afraid of losing right now?",
+      "When was the last time you felt genuinely happy?",
+      "What does love mean to you right now?",
+      "What kind of connection are you looking for?",
+      "What’s something you don’t usually tell people?",
+      "Do you believe people come into your life for a reason?",
+      "What’s something your past self would be proud of?",
+      "What’s one thing you wish someone understood about you?",
+      "What kind of future do you quietly hope for?",
+      "What does “home” feel like to you?",
+
+      "What’s a small detail you notice about people right away?",
+      "What kind of conversations do you enjoy the most?",
+      "What’s something that instantly calms you?",
+      "Do you believe in timing or everything happening for a reason?",
+      "What’s a place that feels peaceful to you?",
+      "What’s your love language (giving or receiving)?",
+      "What kind of music feels like “you”?",
+      "What’s something you’ve outgrown recently?",
+      "What kind of person do you feel drawn to?",
+      "What’s one thing that can always make you laugh?",
+
+      "When do you feel the most understood?",
+      "What’s a quiet moment you really enjoyed recently?",
+      "What’s something you wish you could tell your younger self?",
+      "What kind of energy do you avoid?",
+      "What’s something that scares you but also excites you?",
+      "What’s a memory that still feels soft when you think about it?",
+      "What does your ideal day look like?",
+      "What’s something you’re still figuring out about yourself?",
+      "What kind of reassurance do you need when things feel off?",
+      "What does “peace” look like for you right now?"
+    ];
+
+    function randomQuestion() {
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      document.getElementById("question").innerText = questions[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
